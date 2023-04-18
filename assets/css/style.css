@@ -5,9 +5,7 @@
   --blue-accent: #009fe3;
 }
 
-* {
-  outline: 1px solid red;
-}
+
 
 /* Locator Web Light */
 @font-face {
@@ -270,14 +268,28 @@ font-size: 4.3rem;
 #la-roche.la-roche .es-ingr__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 2rem;
 }
+
+@media screen and (min-width: 600px) {
+  #la-roche.la-roche .es-ingr__container {
+    justify-content: space-between;
+    gap: unset;
+  }
+}
+
 #la-roche.la-roche .es-ingr__single {
   display: flex;
   flex-direction: column;
   align-content: center;
   flex-basis: 240px;
 }
+
+#la-roche.la-roche .es-ingr__single:last-child {
+  margin-bottom: 7rem;
+}
+
 #la-roche.la-roche .es-ingr__main {
   background-repeat: no-repeat;
   background-position: center;
@@ -285,19 +297,22 @@ font-size: 4.3rem;
   height: 240px;
   padding: 0.5rem;
 }
+
 #la-roche.la-roche .es-ingr__main--1 {
   background-image: url(../img/kwas-hialuronowy.png);
 }
+
 #la-roche.la-roche .es-ingr__main--2 {
   background-image: url(../img/wit-B5.png);
 }
+
 #la-roche.la-roche .es-ingr__main--3 {
   background-image: url(../img/gliceryna.png);
 }
+
 #la-roche.la-roche .es-ingr__main--4 {
   background-image: url(../img/wit-E.png);
 }
-
 
 #la-roche.la-roche .es-ingr__name {
   text-transform: uppercase;
