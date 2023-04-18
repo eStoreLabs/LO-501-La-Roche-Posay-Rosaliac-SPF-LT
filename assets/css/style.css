@@ -408,11 +408,12 @@ font-weight: 400;
   text-align: center;
   margin: 50px;
   font-size: 35px;
-  margin-bottom: 7rem;
+  margin-bottom: 10rem;
 }
 
 #la-roche.la-roche .es-cross__single {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   width: 50%;
@@ -430,24 +431,22 @@ font-weight: 400;
 
 #la-roche.la-roche .es-cross__single--1 {
   top: 0;
-  right: 100px;
+  left: 100px;
 }
 
 #la-roche.la-roche .es-cross__single--2 {
   top: 300px;
-  left: 30px;
+  right: 30px;
 }
 
 #la-roche.la-roche .es-cross__single--3 {
-  bottom: 0px;
-  right: 100px;
-}
-#la-roche.la-roche .es-cross__content {
-  max-width: 200px;
+  bottom: -50px;
+  left: 100px;
 }
 
 #la-roche.la-roche .es-cross__name {
   text-transform: uppercase;
+  max-width: 11ch;
   font-size: 25px;
   margin-top: 0;
   padding-top: 0;
@@ -456,7 +455,7 @@ font-weight: 400;
 #la-roche.la-roche .es-cross__number {
   color: var(--blue-accent);
   font-weight: bold;
-  font-size: 180px;
+  font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
   margin: 0;
   padding: 0;
 }
@@ -486,6 +485,38 @@ font-weight: 400;
   color: var(--blue-accent);
   background-color: #fff;
   outline: 2.5px solid var(--blue-accent);
+}
+
+@media screen and (max-width: 700px) {
+  #la-roche.la-roche .es-cross__mainTitle {
+    margin-bottom: unset;
+  }
+
+  #la-roche.la-roche .es-cross {
+    background-image: none;
+    width: 100%;
+    display: flex;
+  } 
+
+  #la-roche.la-roche .es-cross__single {
+    position: static;
+    width: 80vw;
+    text-align: left;
+  }
+
+  #la-roche.la-roche .es-cross__single img {
+    max-width: 30%;
+    height: auto;
+  }
+
+ #la-roche.la-roche .es-cross__name {
+    text-align: left;
+  }
+
+  #la-roche.la-roche .es-cross__single--2 {
+    margin: 5rem 0 2rem 0;
+    text-align: right;
+  }
 }
 
 /* obligations section */
@@ -542,25 +573,6 @@ font-weight: 400;
   font-size: 12px;
 }
 
-@media screen and (max-width: 700px) {
-  #la-roche.la-roche .es-cross {
-    background-image: none;
-  }
-  #la-roche.la-roche .es-cross__single {
-    position: static;
-    width: 100%;
-  }
-  #la-roche.la-roche .es-cross__number {
-    font-size: 100px;
-  }
-  #la-roche.la-roche .es-cross__name {
-    font-size: 20px;
-  }
-  #la-roche.la-roche .es-obligations__single {
-    width: 300px;
-    height: 150px;
-  }
-}
 @media screen and (max-width: 600px) {
   #la-roche.la-roche .es-kv {
     background-position: 40% 80%;
@@ -583,32 +595,3 @@ font-weight: 400;
     max-width: 100%;
   }
 }
-@media screen and (max-width: 400px) {
-  #la-roche.la-roche .es-kv__title {
-    font-size: 20px;
-  }
-  #la-roche.la-roche .es-cross {
-    background-image: none;
-  }
-  #la-roche.la-roche .es-cross__mainTitle {
-    font-size: 25px;
-  }
-  #la-roche.la-roche .es-cross__single {
-    padding: 20px 0;
-    position: static;
-    width: 100%;
-  }
-  #la-roche.la-roche .es-cross__single img {
-    height: 250px;
-    margin: 10px;
-  }
-  #la-roche.la-roche .es-cross__number {
-    font-size: 80px;
-  }
-  #la-roche.la-roche .es-cross__name {
-    font-size: 18px;
-  }
-  #la-roche.la-roche .es-cross__link {
-    font-size: 16px;
-  }
-}/*# sourceMappingURL=style.css.map */
