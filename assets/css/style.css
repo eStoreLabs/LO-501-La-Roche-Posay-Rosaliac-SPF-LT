@@ -1,0 +1,549 @@
+@import url("https://use.typekit.net/cnc6cbd.css");
+:root {
+  /* custom variables */
+  /*colors*/
+  --blue-accent: #009fe3;
+}
+
+* {
+  outline: 1px solid red;
+}
+
+/* Locator Web Light */
+@font-face {
+  font-family: "LocatorWeb";
+  src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot");
+  src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+/* Locator Web Medium */
+@font-face {
+  font-family: "LocatorWeb";
+  src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot");
+  src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#la-roche.la-roche img {
+  max-width: 100%;
+}
+
+#la-roche.la-roche {
+  font-family: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.2;
+  max-width: 998px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #000;
+  background: #fff;
+}
+
+#la-roche.la-roche .es-kv {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/bg-hero.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-size: 100%; */
+  background-position-x: -400%;
+  position: relative;
+}
+
+#la-roche.la-roche .es-kv__brand {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  -webkit-animation: slidedown 0.6s ease forwards;
+          animation: slidedown 0.6s ease forwards;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#la-roche.la-roche .es-kv__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-width: 300px;
+  -webkit-animation: slideright 0.6s ease forwards;
+          animation: slideright 0.6s ease forwards;
+}
+
+#la-roche.la-roche .es-kv__text {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#la-roche.la-roche .es-kv__title {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#la-roche.la-roche .es-kv__title span,
+#la-roche .es-effects .es-effects__title span {
+  color: var(--blue-accent);
+}
+
+#la-roche.la-roche .es-kv__logo {
+  -webkit-animation: slideleft 0.6s ease forwards;
+          animation: slideleft 0.6s ease forwards;
+  max-width: 230px;
+}
+/* #la-roche.la-roche .es-kv__claim {
+  font-size: 16px;
+  margin-top: 5px;
+} */
+#la-roche.la-roche .es-kv__packshot {
+  /* margin-top: 20px; */
+}
+
+#la-roche.la-roche .es-kv__packshot img {
+  max-width: 350px;
+}
+
+#la-roche.la-roche .es-effects__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#la-roche.la-roche .es-effects__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#la-roche.la-roche .es-effects__single {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 5px 10px;
+}
+#la-roche.la-roche .es-effects__single img {
+  width: 40px;
+}
+#la-roche.la-roche .es-effects__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#la-roche.la-roche .es-results {
+  padding: 50px 20px;
+  background-image: url(/images/results-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+#la-roche.la-roche .es-results__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+#la-roche.la-roche .es-results__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#la-roche.la-roche .es-results__single {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 180px;
+  height: 100px;
+  margin: 5px 10px;
+}
+#la-roche.la-roche .es-results__percent {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+#la-roche.la-roche .es-results__text {
+  margin-top: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+#la-roche.la-roche .es-ingr__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+#la-roche.la-roche .es-ingr__retinol {
+  width: 100%;
+  min-height: 150px;
+  background-image: url(/images/retinol-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+#la-roche.la-roche .es-ingr__text {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+#la-roche.la-roche .es-ingr__retinolText {
+  padding: 40px 0;
+  font-size: 18px;
+}
+#la-roche.la-roche .es-ingr__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#la-roche.la-roche .es-ingr__single {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 180px;
+  min-height: 260px;
+  margin: 5px 10px;
+}
+#la-roche.la-roche .es-ingr__main {
+  width: 180px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#la-roche.la-roche .es-ingr__main--1 {
+  background-image: url(/images/vitb3-bg.png);
+}
+#la-roche.la-roche .es-ingr__main--2 {
+  background-image: url(/images/gliceryn-bg.png);
+}
+#la-roche.la-roche .es-ingr__main--3 {
+  background-image: url(/images/hialuron-bg.png);
+}
+#la-roche.la-roche .es-ingr__main--4 {
+  background-image: url(/images/termal-water-bg.png);
+}
+#la-roche.la-roche .es-ingr__name {
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 10px 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  min-height: 50px;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+}
+#la-roche.la-roche .es-ingr__name span {
+  font-size: 12px;
+}
+#la-roche.la-roche .es-ingr__desc {
+  font-size: 14px;
+}
+#la-roche.la-roche .es-ingr__single:hover .es-ingr__name {
+  background-color: rgb(255, 255, 255);
+}
+#la-roche.la-roche .es-use {
+  min-height: 300px;
+  background-image: url(/images/use-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#la-roche.la-roche .es-use__content {
+  max-width: 50%;
+  color: #fff;
+  padding: 40px;
+}
+#la-roche.la-roche .es-use__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+#la-roche.la-roche .es-cross {
+  margin: 50px 0;
+  background-image: url(/images/cross-bg.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  min-height: 900px;
+}
+#la-roche.la-roche .es-cross :nth-child(2) {
+  align-self: flex-start;
+}
+#la-roche.la-roche .es-cross__mainTitle {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  font-size: 35px;
+}
+#la-roche.la-roche .es-cross__single {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  max-height: 400px;
+  position: absolute;
+}
+#la-roche.la-roche .es-cross__single img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 400px;
+  transition: 0.4s ease-in-out;
+}
+#la-roche.la-roche .es-cross__single--1 {
+  top: 0;
+  right: 100px;
+}
+#la-roche.la-roche .es-cross__single--2 {
+  top: 300px;
+  left: 30px;
+}
+#la-roche.la-roche .es-cross__single--3 {
+  bottom: 0px;
+  right: 100px;
+}
+#la-roche.la-roche .es-cross__content {
+  max-width: 200px;
+}
+#la-roche.la-roche .es-cross__name {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 0;
+  padding-top: 0;
+}
+#la-roche.la-roche .es-cross__number {
+  color: #c12735;
+  font-weight: bold;
+  font-size: 150px;
+  margin: 0;
+  padding: 0;
+}
+#la-roche.la-roche .es-cross__desc {
+  font-size: 16px;
+}
+#la-roche.la-roche .es-cross__link {
+  padding: 5px 10px;
+  background-color: #c12735;
+  color: #fff;
+  text-decoration: none;
+  margin: 20px 0;
+  transition: 0.5s ease;
+}
+#la-roche.la-roche .es-cross__single:hover img {
+  transform: scale(1.05);
+}
+#la-roche.la-roche .es-cross__single:hover .es-cross__link {
+  color: #c12735;
+  background-color: #fff;
+  outline: 2.5px solid #c12735;
+}
+#la-roche.la-roche .es-obligations {
+  margin: 50px 0;
+}
+#la-roche.la-roche .es-obligations__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+#la-roche.la-roche .es-obligations__ctn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#la-roche.la-roche .es-obligations__single {
+  width: 45%;
+  min-width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin: 3.5px;
+}
+#la-roche.la-roche .es-obligations__single--1 {
+  background-image: url(/images/obligations-bg-1.png);
+}
+#la-roche.la-roche .es-obligations__single--2 {
+  background-image: url(/images/obligations-bg-2.png);
+}
+#la-roche.la-roche .es-obligations__single--3 {
+  background-image: url(/images/obligations-bg-3.png);
+}
+#la-roche.la-roche .es-obligations__single--4 {
+  background-image: url(/images/obligations-bg-4.png);
+}
+#la-roche.la-roche .es-obligations__text {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px -1px 19px rgb(66, 68, 90);
+  padding: 10px;
+  font-weight: bolder;
+}
+#la-roche.la-roche .es-footer {
+  margin: 50px 0;
+}
+#la-roche.la-roche .es-footer__text {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 700px) {
+  #la-roche.la-roche .es-cross {
+    background-image: none;
+  }
+  #la-roche.la-roche .es-cross__single {
+    position: static;
+    width: 100%;
+  }
+  #la-roche.la-roche .es-cross__number {
+    font-size: 100px;
+  }
+  #la-roche.la-roche .es-cross__name {
+    font-size: 20px;
+  }
+  #la-roche.la-roche .es-obligations__single {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #la-roche.la-roche .es-kv {
+    background-position: 40% 80%;
+    background-size: 150%;
+  }
+  #la-roche.la-roche .es-kv__brand {
+    width: 200px;
+    left: 15%;
+  }
+  #la-roche.la-roche .es-kv__content {
+    margin-top: 50px;
+  }
+  #la-roche.la-roche .es-kv__title {
+    text-align: center;
+  }
+  #la-roche.la-roche .es-kv__claim {
+    text-align: center;
+  }
+  #la-roche.la-roche .es-use__content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #la-roche.la-roche .es-kv__title {
+    font-size: 20px;
+  }
+  #la-roche.la-roche .es-cross {
+    background-image: none;
+  }
+  #la-roche.la-roche .es-cross__mainTitle {
+    font-size: 25px;
+  }
+  #la-roche.la-roche .es-cross__single {
+    padding: 20px 0;
+    position: static;
+    width: 100%;
+  }
+  #la-roche.la-roche .es-cross__single img {
+    height: 250px;
+    margin: 10px;
+  }
+  #la-roche.la-roche .es-cross__number {
+    font-size: 80px;
+  }
+  #la-roche.la-roche .es-cross__name {
+    font-size: 18px;
+  }
+  #la-roche.la-roche .es-cross__link {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
