@@ -170,26 +170,33 @@
   max-width: 350px;
 }
 
+#la-roche.la-roche .es-effects {
+  margin-bottom: 4rem;
+}
+
 #la-roche.la-roche .es-effects__title {
-  font-size: 30px;
+  font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
 }
 
 #la-roche.la-roche .es-effects__icons {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-}
+  align-items: flex-start;
+  align-content: center;
+  gap: 5ch;
+  }
+
 #la-roche.la-roche .es-effects__single {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  margin: 5px 10px;
+  justify-items: flex-start;
+  /* flex-basis: 170px; */
+  flex-basis: 16ch;
 }
 #la-roche.la-roche .es-effects__single img {
   width: 40px;
