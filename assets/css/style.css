@@ -143,7 +143,7 @@
 }
 
 #la-roche.la-roche .es-kv__title {
-  font-size: 28px;
+  font-size: clamp(1.125rem, 0.9167rem + 0.6667vw, 1.5rem);
   text-transform: uppercase;
   margin-bottom: 0;
 }
@@ -158,13 +158,6 @@
           animation: slideleft 0.6s ease forwards;
   max-width: 230px;
 }
-/* #la-roche.la-roche .es-kv__claim {
-  font-size: 16px;
-  margin-top: 5px;
-} */
-#la-roche.la-roche .es-kv__packshot {
-  /* margin-top: 20px; */
-}
 
 #la-roche.la-roche .es-kv__packshot img {
   max-width: 350px;
@@ -175,7 +168,7 @@
 }
 
 #la-roche.la-roche .es-effects__title {
-  font-size: 2rem;
+  font-size: clamp(2rem, 0.2778rem + 3.1111vw, 3rem);
   text-align: center;
   text-transform: uppercase;
 }
@@ -195,61 +188,78 @@
   flex-direction: column;
   align-items: center;
   justify-items: flex-start;
-  /* flex-basis: 170px; */
   flex-basis: 16ch;
 }
+
 #la-roche.la-roche .es-effects__single img {
-  width: 40px;
+  max-width: 40px;
 }
+
 #la-roche.la-roche .es-effects__text {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
 }
+
+/* results section */
 #la-roche.la-roche .es-results {
-  padding: 50px 20px;
-  background-image: url(/images/results-bg.png);
+  background-color: #1990cd;
+  padding: 2rem;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: left;
+  background-size: contain;
   color: #fff;
+ 
 }
+
+@media screen and (min-width: 600px) {
+  #la-roche.la-roche .es-results {
+    padding: 4rem 0 4rem 12rem;
+    background-image: url(../img/lrp-hyalu-b5-aquagel-spf30-pack-with-derm-hand-blue-background.png);
+  }
+}
+
 #la-roche.la-roche .es-results__title {
-  text-align: center;
   text-transform: uppercase;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: clamp(2rem, 0.2778rem + 3.1111vw, 3rem);
   line-height: 1;
-  margin-bottom: 5px;
+  max-width: 25ch;
+  margin: auto;
 }
+
 #la-roche.la-roche .es-results__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
 #la-roche.la-roche .es-results__single {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 180px;
-  height: 100px;
-  margin: 5px 10px;
-}
-#la-roche.la-roche .es-results__percent {
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 40px;
-}
-#la-roche.la-roche .es-results__text {
-  margin-top: 0;
-  font-size: 14px;
+  flex-basis: 20ch;
+  font-weight: 400;
   text-transform: uppercase;
-  font-weight: bold;
+
+}
+
+#la-roche.la-roche .es-results__single span {
+font-weight: bold;
+font-size: 4.3rem;
+}
+
+#la-roche.la-roche .es-results__text {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 400;
   text-align: center;
 }
+
+/* ingredients section */
+
 #la-roche.la-roche .es-ingr__title {
   text-align: center;
   text-transform: uppercase;
