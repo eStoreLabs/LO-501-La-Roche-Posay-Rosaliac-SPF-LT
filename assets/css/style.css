@@ -2,10 +2,8 @@
 :root {
   /* custom variables */
   /*colors*/
-  --blue-accent: #009fe3;
+  --es-es-blue-accent: #009fe3;
 }
-
-
 
 /* Locator Web Light */
 @font-face {
@@ -148,7 +146,7 @@
 
 #la-roche.la-roche .es-kv__title span,
 #la-roche .es-effects .es-effects__title span {
-  color: var(--blue-accent);
+  color: var(--es-blue-accent);
 }
 
 #la-roche.la-roche .es-kv__logo {
@@ -462,7 +460,7 @@ font-weight: 400;
 }
 
 #la-roche.la-roche .es-cross__number {
-  color: var(--blue-accent);
+  color: var(--es-blue-accent);
   font-weight: bold;
   font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
   margin: 0;
@@ -477,7 +475,7 @@ font-weight: 400;
 
 #la-roche.la-roche .es-cross__link {
   padding: 5px 10px;
-  background-color: var(--blue-accent);
+  background-color: var(--es-blue-accent);
   color: #fff;
   text-decoration: none;
   font-size: 12px;
@@ -491,9 +489,9 @@ font-weight: 400;
 }
 
 #la-roche.la-roche .es-cross__single:hover .es-cross__link {
-  color: var(--blue-accent);
+  color: var(--es-blue-accent);
   background-color: #fff;
-  outline: 2.5px solid var(--blue-accent);
+  outline: 2.5px solid var(--es-blue-accent);
 }
 
 @media screen and (max-width: 700px) {
