@@ -263,7 +263,8 @@
   font-weight: 300;
 }
 #la-roche.la-roche .es-use {
-  background-color: #a1d8e6;
+  background-color: #1390cd;
+  color: #fff;
 }
 #la-roche.la-roche .es-use__content {
   padding: 1.5rem;
@@ -445,7 +446,7 @@
     gap: unset;
   }
   #la-roche.la-roche .es-use {
-    background-image: url(../img/bg-use-min.png);
+    background-image: url(../img/bg-es-use.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;

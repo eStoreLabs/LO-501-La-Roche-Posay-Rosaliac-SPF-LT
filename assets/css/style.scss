@@ -4,7 +4,7 @@ $color--white: #fff;
 $color--pink: #dd447b;
 $font-family_1: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
 $background-color_1: #00a4e3;
-$background-color_2: #a1d8e6;
+$background-color_2: #1390cd;
 $background-color_3: #009fe3;
 $background-color_4: #fff;
 $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
@@ -245,6 +245,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	}
 	.es-use {
 		background-color: $background-color_2;
+        color: $color--white;
 	}
 	.es-use__content {
 		padding: 1.5rem;
@@ -252,7 +253,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	.es-use__title {
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
+		font-size: $fs--title;
 	}
 	ol {
 		list-style: none;
@@ -430,7 +431,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
             gap: unset;
         }
 		.es-use {
-			background-image: url(../img/bg-use-min.png);
+			background-image: url(../img/bg-es-use.png);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: right;
