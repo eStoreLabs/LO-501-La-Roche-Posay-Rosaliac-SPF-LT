@@ -1,10 +1,11 @@
-$color_1: #000;
-$color_2: var(--es-blue-accent);
-$color_3: #fff;
+$color--black: #000;
+$color--blue: #009fe3;
+$color--white: #fff;
+$color--pink: #dd447b;
 $font-family_1: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
 $background-color_1: #1990cd;
 $background-color_2: #a1d8e6;
-$background-color_3: var(--es-blue-accent);
+$background-color_3: #009fe3;
 $background-color_4: #fff;
 
 @import "https://use.typekit.net/cnc6cbd.css";
@@ -12,9 +13,7 @@ $background-color_4: #fff;
 @import "./fonts";
 
 
-:root {
-	--es-blue-accent: #009fe3;
-}
+
 #la-roche.la-roche {
 	img {
 		max-width: 100%;
@@ -27,7 +26,7 @@ $background-color_4: #fff;
 	margin: 0 auto;
 	padding: 0;
 	overflow: hidden;
-	color: $color_1;
+	color: $color--black;
 	background: #fff;
 	.es-kv {
 		padding: 20px;
@@ -68,7 +67,7 @@ $background-color_4: #fff;
 		text-transform: uppercase;
 		margin-bottom: 0;
 		span {
-			color: $color_2;
+			color: $color--blue;
 		}
 	}
 	.es-kv__logo {
@@ -124,7 +123,7 @@ $background-color_4: #fff;
 		background-repeat: no-repeat;
 		background-position: left;
 		background-size: 30%;
-		color: $color_3;
+		color: $color--white;
 		transition: background-size 300ms ease-in-out;
 		&:hover {
 			background-size: 41%;
@@ -261,7 +260,7 @@ $background-color_4: #fff;
 		}
 	}
 	.es-cross__mainTitle {
-		color: $color_1;
+		color: $color--black;
 		text-transform: uppercase;
 		text-align: center;
 		margin: 50px;
@@ -287,7 +286,7 @@ $background-color_4: #fff;
 				transform: scale(1.05);
 			}
 			.es-cross__link {
-				color: $color_2;
+				color: $color--blue;
 				background-color: $background-color_4;
 				outline: 2.5px solid var(--es-blue-accent);
 			}
@@ -313,7 +312,7 @@ $background-color_4: #fff;
 		padding-top: 0;
 	}
 	.es-cross__number {
-		color: $color_2;
+		color: $color--blue;
 		font-weight: bold;
 		font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
 		margin: 0;
@@ -327,7 +326,7 @@ $background-color_4: #fff;
 	.es-cross__link {
 		padding: 5px 10px;
 		background-color: $background-color_3;
-		color: $color_3;
+		color: $color--white;
 		text-decoration: none;
 		font-size: 12px;
 		margin: 20px 0;
@@ -371,7 +370,7 @@ $background-color_4: #fff;
 		background-image: url(../img/obligations-bg-4.png);
 	}
 	.es-obligations__text {
-		color: $color_3;
+		color: $color--white;
 		text-transform: uppercase;
 		text-shadow: 2px -1px 19px rgb(66, 68, 90);
 		padding: 10px;
@@ -390,7 +389,7 @@ $background-color_4: #fff;
 	.es-effects {
 		.es-effects__title {
 			span {
-				color: $color_2;
+				color: $color--blue;
 			}
 		}
 	}

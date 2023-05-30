@@ -45,10 +45,6 @@
   font-weight: 400;
   font-style: normal;
 }
-:root {
-  --es-blue-accent: #009fe3;
-}
-
 #la-roche.la-roche {
   font-family: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
@@ -101,7 +97,7 @@
   margin-bottom: 0;
 }
 #la-roche.la-roche .es-kv__title span {
-  color: var(--es-blue-accent);
+  color: #009fe3;
 }
 #la-roche.la-roche .es-kv__logo {
   animation: slideleft 0.6s ease forwards;
@@ -316,7 +312,7 @@
   transform: scale(1.05);
 }
 #la-roche.la-roche .es-cross__single:hover .es-cross__link {
-  color: var(--es-blue-accent);
+  color: #009fe3;
   background-color: #fff;
   outline: 2.5px solid var(--es-blue-accent);
 }
@@ -340,7 +336,7 @@
   padding-top: 0;
 }
 #la-roche.la-roche .es-cross__number {
-  color: var(--es-blue-accent);
+  color: #009fe3;
   font-weight: bold;
   font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
   margin: 0;
@@ -353,7 +349,7 @@
 }
 #la-roche.la-roche .es-cross__link {
   padding: 5px 10px;
-  background-color: var(--es-blue-accent);
+  background-color: #009fe3;
   color: #fff;
   text-decoration: none;
   font-size: 12px;
@@ -414,7 +410,7 @@
 }
 
 #la-roche .es-effects .es-effects__title span {
-  color: var(--es-blue-accent);
+  color: #009fe3;
 }
 
 @media screen and (min-width: 600px) {
