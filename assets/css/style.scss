@@ -178,61 +178,70 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
     /********************
     ingredients section
     ********************/
-	.es-ingr__title {
+	.es-ingr {
+        margin-bottom: 5rem;
+    }
+    .es-ingr__title {
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
-		font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
+		font-size: $fs--title;
 	}
 	.es-ingr__container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 2rem;
+		//gap: 2rem;
 	}
 	.es-ingr__single {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
 		flex-basis: 240px;
-		&:last-child {
-			margin-bottom: 7rem;
-		}
+		height: 240px;
+        position: relative;
+        background-size: 100%;
+        background-position: center;
+        transition: background-size 300ms ease-in-out;
+        &:hover {
+            background-size: 105%;
+        }
 	}
 	.es-ingr__main {
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: 100%;
-		height: 240px;
-		padding: 0.5rem;
-		transition: background-size 300ms ease-in-out;
-		&:hover {
-			background-size: 115%;
-		}
+		padding: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 150px;
+        width: 220px;
+        background-color: rgba(255, 255, 255, 0.65);
 	}
-	.es-ingr__main--1 {
-		background-image: url(../img/kwas-hialuronowy.png);
+    
+	.es-ingr__single--1 {
+		background-image: url(../img/es-ingr-1.png);
 	}
-	.es-ingr__main--2 {
-		background-image: url(../img/wit-B5.png);
+	.es-ingr__single--2 {
+		background-image: url(../img/es-ingr-2.png);
 	}
-	.es-ingr__main--3 {
-		background-image: url(../img/gliceryna.png);
+	.es-ingr__single--3 {
+		background-image: url(../img/es-ingr-3.png);
 	}
-	.es-ingr__main--4 {
-		background-image: url(../img/wit-E.png);
+	.es-ingr__single--4 {
+		background-image: url(../img/es-ingr-4.png);
 	}
 	.es-ingr__name {
 		text-transform: uppercase;
 		font-weight: 900;
-		margin-top: 4rem;
+		//margin-top: 4rem;
 		font-size: clamp(1rem, 0.8958rem + 0.3333vw, 1.1875rem);
 		transition: 0.4s ease-in-out;
 	}
 	.es-ingr__desc {
 		text-transform: uppercase;
 		font-size: 0.8rem;
-		font-weight: 400;
+		font-weight: 300;
 	}
 	.es-use {
 		background-color: $background-color_2;
@@ -417,10 +426,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
                 justify-content: flex-start;
             }
 		}
-		.es-ingr__container {
-			justify-content: space-between;
-			gap: unset;
-		}
+		
 		.es-use {
 			background-image: url(../img/bg-use-min.png);
 			background-repeat: no-repeat;

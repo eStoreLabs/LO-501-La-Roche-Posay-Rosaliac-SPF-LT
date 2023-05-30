@@ -199,6 +199,9 @@
   margin: 0;
   padding: 0;
 }
+#la-roche.la-roche .es-ingr {
+  margin-bottom: 5rem;
+}
 #la-roche.la-roche .es-ingr__title {
   text-align: center;
   text-transform: uppercase;
@@ -209,51 +212,54 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
 }
 #la-roche.la-roche .es-ingr__single {
   display: flex;
   flex-direction: column;
   align-content: center;
   flex-basis: 240px;
+  height: 240px;
+  position: relative;
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 300ms ease-in-out;
 }
-#la-roche.la-roche .es-ingr__single:last-child {
-  margin-bottom: 7rem;
+#la-roche.la-roche .es-ingr__single:hover {
+  background-size: 105%;
 }
 #la-roche.la-roche .es-ingr__main {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
-  height: 240px;
-  padding: 0.5rem;
-  transition: background-size 300ms ease-in-out;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 150px;
+  width: 220px;
+  background-color: rgba(255, 255, 255, 0.65);
 }
-#la-roche.la-roche .es-ingr__main:hover {
-  background-size: 115%;
+#la-roche.la-roche .es-ingr__single--1 {
+  background-image: url(../img/es-ingr-1.png);
 }
-#la-roche.la-roche .es-ingr__main--1 {
-  background-image: url(../img/kwas-hialuronowy.png);
+#la-roche.la-roche .es-ingr__single--2 {
+  background-image: url(../img/es-ingr-2.png);
 }
-#la-roche.la-roche .es-ingr__main--2 {
-  background-image: url(../img/wit-B5.png);
+#la-roche.la-roche .es-ingr__single--3 {
+  background-image: url(../img/es-ingr-3.png);
 }
-#la-roche.la-roche .es-ingr__main--3 {
-  background-image: url(../img/gliceryna.png);
-}
-#la-roche.la-roche .es-ingr__main--4 {
-  background-image: url(../img/wit-E.png);
+#la-roche.la-roche .es-ingr__single--4 {
+  background-image: url(../img/es-ingr-4.png);
 }
 #la-roche.la-roche .es-ingr__name {
   text-transform: uppercase;
   font-weight: 900;
-  margin-top: 4rem;
   font-size: clamp(1rem, 0.8958rem + 0.3333vw, 1.1875rem);
   transition: 0.4s ease-in-out;
 }
 #la-roche.la-roche .es-ingr__desc {
   text-transform: uppercase;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 #la-roche.la-roche .es-use {
   background-color: #a1d8e6;
@@ -433,10 +439,6 @@
   }
   #la-roche.la-roche .es-results__content {
     justify-content: flex-start;
-  }
-  #la-roche.la-roche .es-ingr__container {
-    justify-content: space-between;
-    gap: unset;
   }
   #la-roche.la-roche .es-use {
     background-image: url(../img/bg-use-min.png);
