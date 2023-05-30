@@ -289,12 +289,10 @@
   font-size: 1.5rem;
 }
 #la-roche.la-roche .es-cross {
-  margin: 50px 0;
-  background-image: url(../img/bg-routine-min.png);
+  background-image: url(../img/bg-es-cross.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  padding: 20px;
+  background-size: cover;
+  background-position: bottom right;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,12 +303,21 @@
 #la-roche.la-roche .es-cross:nth-child(2) {
   align-self: flex-start;
 }
+#la-roche.la-roche .es-cross:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
 #la-roche.la-roche .es-cross__mainTitle {
   color: #000;
   text-transform: uppercase;
   text-align: center;
   margin: 50px;
-  font-size: 35px;
+  font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 }
 #la-roche.la-roche .es-cross__single {
   display: flex;
@@ -325,7 +332,7 @@
 #la-roche.la-roche .es-cross__single img {
   max-width: 100%;
   max-height: 100%;
-  height: 400px;
+  height: 450px;
   transition: 0.4s ease-in-out;
 }
 #la-roche.la-roche .es-cross__single:hover img {
@@ -339,14 +346,17 @@
 #la-roche.la-roche .es-cross__single--1 {
   top: 0;
   left: 100px;
+  z-index: 1;
 }
 #la-roche.la-roche .es-cross__single--2 {
   top: 300px;
   right: 30px;
+  z-index: 2;
 }
 #la-roche.la-roche .es-cross__single--3 {
   bottom: -50px;
   left: 100px;
+  z-index: 1;
 }
 #la-roche.la-roche .es-cross__name {
   text-transform: uppercase;
@@ -468,17 +478,16 @@
   #la-roche.la-roche .es-cross__single {
     position: static;
     width: 80vw;
+    margin: auto;
     text-align: left;
   }
   #la-roche.la-roche .es-cross__single img {
-    max-width: 30%;
-    height: auto;
+    max-height: 400px;
   }
   #la-roche.la-roche .es-cross__name {
     text-align: left;
   }
   #la-roche.la-roche .es-cross__single--2 {
-    margin: 5rem 0 2rem 0;
     text-align: right;
   }
 }
