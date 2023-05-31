@@ -8,6 +8,10 @@ $background-color_2: #1390cd;
 $background-color_3: #009fe3;
 $background-color_4: #fff;
 $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
+$fw--light: 300;
+$fw--medium: 500;
+$fw--bold: 700;
+$fw--black: 900;
 
 @import "https://use.typekit.net/cnc6cbd.css";
 @import "./animations";
@@ -19,9 +23,12 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	img {
 		max-width: 100%;
 	}
+	strong {
+		font-weight: $fw--medium;
+	}
 	font-family: $font-family_1;
 	font-size: 18px;
-	font-weight: 200;
+	font-weight: $fw--light;
 	line-height: 1.2;
 	max-width: 998px;
 	margin: 0 auto;
@@ -95,7 +102,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 		font-size: $fs--title;
 		margin: auto;
 		text-transform: uppercase;
-        max-width: 18ch;
+        max-width: 17ch;
         & span {
             color: $color--pink;
         }
@@ -125,7 +132,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	.es-effects__text {
 		text-align: center;
 		font-size: 0.8rem;
-		font-weight: bold;
+		font-weight: $fw--medium;
 		text-transform: uppercase;
 	}
 	.es-results {
@@ -158,18 +165,20 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 		justify-content: flex-start;
 		align-items: center;
 		flex-basis: 20ch;
-		font-weight: 400;
+		font-weight: $fw--medium;
 		text-transform: uppercase;
-        
+        p {
+			margin-bottom: 0;
+			max-width: 18ch;
+		}
 		span {
-			font-weight: bold;
+			//font-weight: bold;
 			font-size: 4.3rem;
 		}
 	}
 	.es-results__text {
 		font-size: 1.1rem;
 		text-transform: uppercase;
-		font-weight: 400;
 		text-align: center;
         margin: 0;
         padding: 0;
@@ -184,7 +193,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
     .es-ingr__title {
 		text-align: center;
 		text-transform: uppercase;
-		font-weight: bold;
+		font-weight: $fw--medium;
 		font-size: $fs--title;
 	}
 	.es-ingr__container {
@@ -233,7 +242,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	}
 	.es-ingr__name {
 		text-transform: uppercase;
-		font-weight: 900;
+		font-weight: $fw--black;
 		//margin-top: 4rem;
 		font-size: clamp(1rem, 0.8958rem + 0.3333vw, 1.1875rem);
 		transition: 0.4s ease-in-out;
@@ -241,7 +250,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	.es-ingr__desc {
 		text-transform: uppercase;
 		font-size: 0.8rem;
-		font-weight: 300;
+		font-weight: $fw--medium;
 	}
 	.es-use {
 		background-color: $background-color_2;
@@ -252,7 +261,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	}
 	.es-use__title {
 		text-transform: uppercase;
-		font-weight: bold;
+		font-weight: $fw--medium;
 		font-size: $fs--title;
 	}
 	ol {
@@ -262,9 +271,10 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 			counter-increment: my-counter;
 			margin-bottom: 0.7em;
 			padding: 0 0 0 .5em;
+			font-weight: $fw--light;
 			&::marker {
 				content: counter(my-counter) ".";
-				font-weight: 400;
+				font-weight: $fw--medium;
 				font-size: 1.5rem;
 			}
 		}
@@ -272,8 +282,8 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	.es-cross {
 		background-image: url(../img/bg-es-cross.png);
 		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: bottom right;
+		background-size: 85%;
+		background-position: bottom center;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -306,7 +316,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 		flex-direction: row-reverse;
 		justify-content: space-around;
 		align-items: center;
-		width: 50%;
+		width: 48%;
 		max-height: 400px;
 		position: absolute;
 		text-align: left;
@@ -323,7 +333,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 			.es-cross__link {
 				color: $color--blue;
 				background-color: $background-color_4;
-				outline: 2.5px solid var(--es-blue-accent);
+				outline: 2.5px solid $color--blue;
 			}
 		}
 	}
@@ -333,8 +343,8 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
         z-index: 1;
 	}
 	.es-cross__single--2 {
-		top: 300px;
-		right: 30px;
+		top: 220px;
+		right: 66px;
         z-index: 2;
 	}
 	.es-cross__single--3 {
@@ -351,7 +361,7 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 	}
 	.es-cross__number {
 		color: $color--blue;
-		font-weight: bold;
+		font-weight: $fw--bold;
 		font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
 		margin: 0;
 		padding: 0;
@@ -426,6 +436,9 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 
 @media screen and (min-width: 600px) {
 	#la-roche.la-roche {
+		.es-effects__title {
+			max-width: unset;
+		}
 		.es-results {
 			padding: 2rem 16rem 2rem 8rem;
 			background-image: url(../img/bg-es-effects.png);
@@ -448,8 +461,11 @@ $fs--title: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 			background-position: right;
 		}
 		.es-use__content {
-			max-width: 45%;
+			max-width: 50%;
 			padding: 1rem 7rem;
+		}
+		.es-obligations__title {
+			margin-top: 9rem;
 		}
 	}
 }

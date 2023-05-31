@@ -1,4 +1,5 @@
 @import "https://use.typekit.net/cnc6cbd.css";
+@import url("https://use.typekit.net/cnc6cbd.css");
 @keyframes slidedown {
   from {
     opacity: 0;
@@ -29,6 +30,7 @@
     transform: translateX(0);
   }
 }
+/* import from Adobe */
 /* Locator Web Light */
 @font-face {
   font-family: "LocatorWeb";
@@ -36,6 +38,7 @@
   src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
+  font-display: swap;
 }
 /* Locator Web Medium */
 @font-face {
@@ -44,11 +47,12 @@
   src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 #la-roche.la-roche {
   font-family: Locator, "LocatorWeb", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.2;
   max-width: 998px;
   margin: 0 auto;
@@ -62,6 +66,9 @@
 }
 #la-roche.la-roche img {
   max-width: 100%;
+}
+#la-roche.la-roche strong {
+  font-weight: 500;
 }
 #la-roche.la-roche .es-kv {
   padding: 20px;
@@ -123,7 +130,7 @@
   font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
   margin: auto;
   text-transform: uppercase;
-  max-width: 18ch;
+  max-width: 17ch;
 }
 #la-roche.la-roche .es-effects__title span {
   color: #dd447b;
@@ -152,7 +159,7 @@
 #la-roche.la-roche .es-effects__text {
   text-align: center;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
 }
 #la-roche.la-roche .es-results {
@@ -184,17 +191,19 @@
   justify-content: flex-start;
   align-items: center;
   flex-basis: 20ch;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
 }
+#la-roche.la-roche .es-results__single p {
+  margin-bottom: 0;
+  max-width: 18ch;
+}
 #la-roche.la-roche .es-results__single span {
-  font-weight: bold;
   font-size: 4.3rem;
 }
 #la-roche.la-roche .es-results__text {
   font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 400;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -205,7 +214,7 @@
 #la-roche.la-roche .es-ingr__title {
   text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 }
 #la-roche.la-roche .es-ingr__container {
@@ -260,7 +269,7 @@
 #la-roche.la-roche .es-ingr__desc {
   text-transform: uppercase;
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 #la-roche.la-roche .es-use {
   background-color: #1390cd;
@@ -271,7 +280,7 @@
 }
 #la-roche.la-roche .es-use__title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   font-size: clamp(2rem, 1.7222rem + 0.8889vw, 2.5rem);
 }
 #la-roche.la-roche ol {
@@ -282,17 +291,18 @@
   counter-increment: my-counter;
   margin-bottom: 0.7em;
   padding: 0 0 0 0.5em;
+  font-weight: 300;
 }
 #la-roche.la-roche ol li::marker {
   content: counter(my-counter) ".";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 #la-roche.la-roche .es-cross {
   background-image: url(../img/bg-es-cross.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
+  background-size: 85%;
+  background-position: bottom center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -324,7 +334,7 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 48%;
   max-height: 400px;
   position: absolute;
   text-align: left;
@@ -341,7 +351,7 @@
 #la-roche.la-roche .es-cross__single:hover .es-cross__link {
   color: #009fe3;
   background-color: #fff;
-  outline: 2.5px solid var(--es-blue-accent);
+  outline: 2.5px solid #009fe3;
 }
 #la-roche.la-roche .es-cross__single--1 {
   top: 0;
@@ -349,8 +359,8 @@
   z-index: 1;
 }
 #la-roche.la-roche .es-cross__single--2 {
-  top: 300px;
-  right: 30px;
+  top: 220px;
+  right: 66px;
   z-index: 2;
 }
 #la-roche.la-roche .es-cross__single--3 {
@@ -367,7 +377,7 @@
 }
 #la-roche.la-roche .es-cross__number {
   color: #009fe3;
-  font-weight: bold;
+  font-weight: 700;
   font-size: clamp(4.375rem, 1.5972rem + 8.8889vw, 9.375rem);
   margin: 0;
   padding: 0;
@@ -440,6 +450,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  #la-roche.la-roche .es-effects__title {
+    max-width: unset;
+  }
   #la-roche.la-roche .es-results {
     padding: 2rem 16rem 2rem 8rem;
     background-image: url(../img/bg-es-effects.png);
@@ -462,8 +475,11 @@
     background-position: right;
   }
   #la-roche.la-roche .es-use__content {
-    max-width: 45%;
+    max-width: 50%;
     padding: 1rem 7rem;
+  }
+  #la-roche.la-roche .es-obligations__title {
+    margin-top: 9rem;
   }
 }
 @media screen and (max-width: 700px) {

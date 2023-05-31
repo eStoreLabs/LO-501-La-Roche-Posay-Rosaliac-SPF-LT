@@ -1,3 +1,6 @@
+/* import from Adobe */
+@import url("https://use.typekit.net/cnc6cbd.css");
+
 /* Locator Web Light */
 @font-face {
 	font-family: "LocatorWeb";
@@ -5,6 +8,7 @@
 	src: url("./assets/fonts/LocatorWebLight/LocatorWebLight.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff2") format("woff2"), url("./assets/fonts/LocatorWebLight/LocatorWebLight.woff") format("woff");
 	font-weight: 200;
 	font-style: normal;
+	font-display: swap;
 }
 /* Locator Web Medium */
 @font-face {
@@ -13,4 +17,5 @@
 	src: url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff2") format("woff2"), url("./assets/fonts/LocatorWebMedium/LocatorWebMedium.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
 }
